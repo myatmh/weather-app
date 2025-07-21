@@ -21,8 +21,7 @@ h1 {
 }
 
 main {
-  min-width: 480px;
-  width: 600px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,6 +96,7 @@ p[class="min_max"] i {
   display: flex;
   justify-content: space-between;
   margin-top: 4rem;
+  gap: 1rem;
 }
 
 .forecast .day {
@@ -113,4 +113,14 @@ p[class="min_max"] i {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 480px) {
+  main {
+    width: 100%;
+  }
+  .forecast .day {
+    width: 140px;
+    height: 120px;
+  }
 }
