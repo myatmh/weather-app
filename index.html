@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Simple Weather App With openWeather Api"
+    />
+    <meta name="keywords" content="Weather,application,JavaScript" />
+    <meta name="author" content="Myat Min Htwe" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <h1>Weather</h1>
+    <main>
+      <form class="form_control">
+        <input type="text" class="input_box" placeholder="Enter City Name" />
+        <button type="submit" class="submit_btn">Get Weather</button>
+      </form>
+      <div class="weather_details">
+        <h4>Yangon</h4>
+        <p class="temp">25°C</p>
+        <p class="icon">🌞</p>
+        <p class="condition">Cloudy</p>
+        <p class="min_max"><i>Min-Max</i> - 25°C / 27°C</p>
+        <div class="hu_wind">
+          <p>💧 Humidity - 50%</p>
+          <p class="wind">༄.° Wind - 45km/h</p>
+        </div>
+
+        <div class="forecast">
+          <div class="day">
+            <div class="day_content">
+              <p>Today</p>
+              <!-- <img src="" /> -->
+              <span>☀️</span>
+            </div>
+            <p><i>Temp</i> - 25° / 27°</p>
+          </div>
+          <div class="day">
+            <div class="day_content">
+              <p>Tomorrow</p>
+              <!-- <img src="" /> -->
+              <span>🌤️</span>
+            </div>
+            <p><i>Temp</i> - 25° / 30°</p>
+          </div>
+          <div class="day">
+            <div class="day_content">
+              <p>Wed</p>
+              <!-- <img src="" /> -->
+              <span>🌦️</span>
+            </div>
+            <p><i>Temp</i> - 25° / 28°</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

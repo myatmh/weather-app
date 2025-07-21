@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(200, 19%, 15%);
+  color: hsl(0, 10%, 88%);
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 1rem 0rem 2rem;
+}
+
+main {
+  min-width: 480px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_control {
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.input_box {
+  outline: none;
+  border: 1px solid hsl(251, 20%, 45%);
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 8px;
+  background-color: hsl(251, 19%, 23%);
+  color: hsl(0, 10%, 88%);
+}
+.input_box::placeholder {
+  color: hsla(0, 10%, 88%, 0.45);
+}
+
+.submit_btn {
+  cursor: pointer;
+  background-color: hsl(208, 35%, 17%);
+  color: hsl(0, 10%, 88%);
+  font-size: 16px;
+  outline: none;
+  border: 1px solid hsl(251, 19%, 23%);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.weather_details {
+  background: linear-gradient(180deg, hsl(235, 23%, 31%), hsl(233, 33%, 14%));
+  width: 100%;
+  height: auto;
+  padding: 4rem 2rem;
+  border-radius: 16px;
+}
+
+p[class="temp"] {
+  font-size: 80px;
+  font-weight: 300;
+  margin: 1rem 0rem;
+}
+
+p[class="icon"] {
+  font-size: 40px;
+}
+
+p[class="condition"] {
+  margin: 1rem 0rem;
+  font-weight: bold;
+}
+
+p[class="min_max"] i {
+  opacity: 0.8;
+}
+
+.hu_wind {
+  height: 40px;
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  margin: 1rem 0rem;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.forecast .day {
+  background: linear-gradient(225deg, hsl(233, 33%, 14%), hsl(235, 23%, 31%));
+  width: 160px;
+  height: 120px;
+  padding: 1rem;
+  border: 1px solid hsl(235, 23%, 31%);
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px hsl(251, 20%, 45%);
+}
+
+.day_content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
