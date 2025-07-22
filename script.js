@@ -16,13 +16,13 @@ const weatherIcons = {
 
 let cityName;
 
-// window.onload = () => {
-//   cityName = localStorage.getItem("savedCity")
-//     ? localStorage.getItem("savedCity")
-//     : "Yangon";
-//   console.log(cityName);
-//   getWeather(cityName);
-// };
+window.onload = () => {
+  cityName = localStorage.getItem("savedCity")
+    ? localStorage.getItem("savedCity")
+    : "Yangon";
+  // console.log(cityName);
+  getWeather(cityName);
+};
 
 inputTag.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
@@ -68,8 +68,12 @@ const getWeather = async (city) => {
       weatherDetailDiv.innerHTML = "";
       weatherDetailDiv.classList.add("trans");
       messageContainer.style.display = "none";
+
       const condition = data.weather[0].main;
       // console.log("imgurl :", weatherIcons[condition]);
+
+      localStorage.setItem("savedCity", data.name);
+
       weatherDetailDiv.innerHTML = `
         <h4>${data.name}</h4>
         <i style="font-size:12px;">${data.sys.country}</i>
