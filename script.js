@@ -43,8 +43,10 @@ const getWeather = async (city) => {
       return;
     } else {
       const weatherDetailDiv = document.querySelector(".weather_details");
+      weatherDetailDiv.classList.add("trans");
       weatherDetailDiv.innerHTML = `
         <h4>${data.name}</h4>
+        <i style="font-size:12px;">${data.sys.country}</i>
         <p class="temp">${data.main.temp} °C</p>
         <p class="icon">🌞</p>
         <p class="condition">${data.weather[0].main}</p>
