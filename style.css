@@ -65,6 +65,15 @@ main {
   border-radius: 16px;
 }
 
+.error_message {
+  display: flex;
+  justify-content: center;
+}
+.error_message i {
+  font-size: 32px;
+  color: hsl(342, 97%, 59%);
+}
+
 p[class="temp"] {
   font-size: 80px;
   font-weight: 300;
