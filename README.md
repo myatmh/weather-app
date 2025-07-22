@@ -1,10 +1,10 @@
-# Weather App
+# Weather App 🌦️
 
 A simple weather application built with HTML, CSS, and JavaScript using the OpenWeather API.
 
 ## Live Demo
 
-[Weather-App](https://myatmh.github.io/weather-app/)
+🌐 [Weather-App](https://myatmh.github.io/weather-app/)
 
 ## Features
 
